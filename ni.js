@@ -36,7 +36,7 @@ app.config(function ($routeProvider) {
         });
 
 
-})
+});
 app.controller('efoNI', function () {
    
 });
