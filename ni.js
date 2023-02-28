@@ -1,8 +1,10 @@
-netlifyIdentity.on('init', () =>{
+const app = angular.module('emmaPage', ['ngRoute']);
+
+netlifyIdentity.on('init', () => {
     initUser = netlifyIdentity.currentUser();
 });
 
-netlifyIdentity.on('login', () =>{
+netlifyIdentity.on('login', () => {
     if (initUser == null) {
         window.location.replace('loggedIn');
     }
@@ -14,23 +16,24 @@ netlifyIdentity.on('logout', () => {
     window.location.replace('/');
 });
 
-const app = angular.module('emmaPage', ['ngRoute']);
 
-app.config(function ($routeProvider){
+app.config(function ($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl: 'index.html'
-    })
-    .when("/home", {
-        templateUrl: 'index.html'
-    })
-    .when("/cats", {
-        templateUrl: 'cats.html'
-    })
-    .when("/dogs", {
-        templateUrl: 'dogs.html'
-    })
+        .when("/", {
+            templateUrl: 'index.html'
+        })
+        .when("/home", {
+            templateUrl: 'index.html'
+        })
+        .when("/cats", {
+            templateUrl: 'cats.html'
+        })
+        .when("/dogs", {
+            templateUrl: 'dogs.html'
+        })
 
-app.controller('efoNI', function())
+    app.controller('efoNI', function () {
 
     });
+
+});
