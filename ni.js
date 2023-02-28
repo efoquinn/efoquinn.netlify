@@ -35,8 +35,8 @@ app.config(function ($routeProvider) {
             templateUrl: 'dogs.html'
         })
 
-    app.controller('efoNI', function ($scope, $http) {
+    // app.controller('efoNI', function ($scope, $http) {
 
-    });
+    // });
 
 });
