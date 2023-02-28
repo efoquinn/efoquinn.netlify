@@ -25,6 +25,9 @@ app.config(function ($routeProvider) {
         .when("/home", {
             templateUrl: 'index.html'
         })
+        .when("/loggedIn", {
+            templateUrl: 'loggedIn.html'
+        })
         .when("/cats", {
             templateUrl: 'cats.html'
         })
