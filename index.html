@@ -8,11 +8,26 @@
     <script src="ni.js"></script>
 </head>
 
-<body>
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">Emma's Netlify Identity Page</a>
-    </nav>
+<body ng-app="emmaPage" ng-controller="efoNI">
 
+
+    <div class="topNav">
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!cats">Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!dogs">Dogs</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main ng-view></main>
 
     <div data-netlify-identity-menu></div>
 
