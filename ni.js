@@ -17,26 +17,26 @@ netlifyIdentity.on('logout', () => {
 });
 
 
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl: 'index.html'
-        })
-        .when("/home", {
-            templateUrl: 'index.html'
-        })
-        .when("/loggedIn", {
-            templateUrl: 'loggedIn.html'
-        })
-        .when("/cats", {
-            templateUrl: 'cats.html'
-        })
-        .when("/dogs", {
-            templateUrl: 'dogs.html'
-        });
+// app.config(function ($routeProvider) {
+//     $routeProvider
+//         .when("/", {
+//             templateUrl: 'index.html'
+//         })
+//         .when("/home", {
+//             templateUrl: 'index.html'
+//         })
+//         .when("/loggedIn", {
+//             templateUrl: 'loggedIn.html'
+//         })
+//         .when("/cats", {
+//             templateUrl: 'cats.html'
+//         })
+//         .when("/dogs", {
+//             templateUrl: 'dogs.html'
+//         });
 
 
-});
+// });
 app.controller('efoNI', function () {
    
 });
